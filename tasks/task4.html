@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Array Reversal and Conversions</title>
+  <style>
+    /* Add some basic styling */
+    body {
+      font-family: Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <h1>Array Reversal and Conversions</h1>
+
+  <h2>Reverse an Array</h2>
+  <button onclick="reverseArray()">Reverse Array</button>
+
+  <h2>Convert Minutes to Seconds</h2>
+  <button onclick="convertMinutesToSeconds()">Convert Minutes to Seconds</button>
+
+  <h2>Convert Age to Days</h2>
+  <button onclick="convertAgeToDays()">Convert Age to Days</button>
+
+  <script>
+    function reverseArray() {
+      var input = prompt("Enter an array of comma-separated values:");
+      var myArray = input.split(",");
+
+      var reversedArray = [];
+      for (var i = myArray.length - 1; i >= 0; i--) {
+        reversedArray.push(myArray[i]);
+      }
+
+      console.log("Reversed Array:", reversedArray);
+    }
+
+    function convertMinutesToSeconds() {
+      var minutes = prompt("Enter the number of minutes:");
+
+      var seconds = minutes * 60;
+
+      console.log(minutes + " minutes is equal to " + seconds + " seconds.");
+    }
+
+    function convertAgeToDays() {
+      var age = prompt("Enter your age in years:");
+
+      var days = age * 365;
+
+      console.log(age + " years is equal to approximately " + days + " days.");
+    }
+  </script>
+</body>
+</html>

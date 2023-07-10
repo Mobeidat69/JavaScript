@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammed Mahasneh's tasks</title>
+    <link rel="icon" href="./Orange-Logo-JPG.jpg" type="image/png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+        @keyframes colorChange {
+            0%   {background-color: orange;}
+            25%  {background-color: orangered;}
+            50%  {background-color: red;}
+            75%  {background-color: green;}
+            100% {background-color: #FF7900;}
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 2px;
+            animation-name: colorChange;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            background-color: red; /* Initial background color */
+        }
+
+        h1 {
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            color: #ff7900;
+            margin-top: 0;
+            margin-bottom: 30px;
+        }
+        
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .task-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 40px;
+        }
+
+        .task-groups {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .task-group {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+        .task-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .task-list li {
+            margin: 10px 0;
+        }
+
+        .task-list a {
+            display: block;
+            padding: 10px;
+            background-color: #FF7900;
+            border-radius: 15px;
+            text-decoration: none;
+            color: #fff;
+            transition: background-color 0.3s ease;
+        }
+
+        .task-list a:hover {
+            background-color: #FF7900;
+            opacity: 0.8;
+        }
+
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .footer-links a {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        .footer-links img {
+            width: 125px;
+            height: 125px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Mohammed Mahasneh's tasks</h1>
+        <div class="task-wrapper">
+            <div class="task-groups">
+                <div class="task-group">
+                    <h1>14/6</h1>
+                    <ul class="task-list">
+                        <li><a href="./tasks/task1.html">Task 1</a></li>
+                        <li><a href="./tasks/task2.html">Task 2</a></li>
+                        <li><a href="./tasks/task3.html">Task 3</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+    <br>
+    <footer>
+        <p>&copy; 2023 this website has been built by M.M.</p>
+    </footer>
+</body>
+</html>

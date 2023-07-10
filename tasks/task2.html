@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculator</title>
+  <style>
+    /* Add some basic styling */
+    body {
+      font-family: Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <h1>Calculator</h1>
+
+  <button onclick="performOperation()">Calculate</button>
+
+  <script>
+    function performOperation() {
+      var operation = prompt("Enter an operation (+, -, *, /)");
+      var num1 = Number(prompt("Enter number 1"));
+      var num2 = Number(prompt("Enter number 2"));
+
+      var result;
+      if (operation === "+") {
+        result = num1 + num2;
+      } else if (operation === "-") {
+        result = num1 - num2;
+      } else if (operation === "*") {
+        result = num1 * num2;
+      } else if (operation === "/") {
+        result = num1 / num2;
+      } else {
+        result = "Invalid operation";
+      }
+
+      console.log("Operation:", operation, "Number 1:", num1, "Number 2:", num2, "Result:", result);
+    }
+  </script>
+</
